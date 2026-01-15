@@ -1,6 +1,6 @@
 ## ScenARy Website
 
-This is ScenARy: An augmented reality app for virtual historical tours, made using [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). This will handle the admin control and uses React.js (v18+), Next.js, Material UI (MUI), Recharts
+This is ScenARy: An augmented reality app for virtual historical tours, made using [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). This will handle the admin control and uses React.js (v18+), Next.js, Material UI (MUI), Recharts.
 
 ## Getting Started
 
