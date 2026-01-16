@@ -1,0 +1,118 @@
+/* src/styles/user-details.css */
+
+/* ===========================
+   User Details Page
+=========================== */
+.sub-header {
+  background: rgba(193, 154, 107, 0.2);
+  color: var(--color-accent-gold);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  border: 1px solid var(--color-accent-gold);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab-btn.active {
+  background: rgba(193, 154, 107, 0.8);
+  color: var(--color-bg-dark);
+}
+
+.tab-btn.inactive {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-muted);
+}
+
+/* ===========================
+   Details Grid
+=========================== */
+.details-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.profile-image-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-glass-border);
+}
+
+.user-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.user-form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-light);
+  font-weight: 600;
+}
+
+.user-form .form-control {
+  width: 100%;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-glass-border);
+  border-radius: 4px;
+  color: var(--color-text-light);
+}
+
+/* ===========================
+   Statistics View
+=========================== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-box {
+  background: rgba(193, 154, 107, 0.1);
+  border: 1px solid var(--color-accent-gold);
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.stat-box h4 {
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-glass-border);
+  padding-bottom: 0.5rem;
+}
+
+.stat-list {
+  list-style: none;
+  padding: 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.stat-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.stat-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-gold);
+}
