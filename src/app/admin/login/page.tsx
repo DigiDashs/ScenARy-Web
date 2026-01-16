@@ -8,13 +8,24 @@ export default function AdminLogin() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setError(""); // Clear previous errors
 
     // Add your authentication logic here
-    // For now, it just redirects to dashboard
-    router.push("/admin/dashboard");
+    // Example: Check credentials
+    const validEmail = "admin@scenary.com";
+    const validPassword = "admin123";
+
+    if (email === validEmail && password === validPassword) {
+      // Success - redirect to dashboard
+      router.push("/admin/dashboard");
+    } else {
+      // Show error message
+      setError("Incorrect email or password. Please try again.");
+    }
   };
 
   return (
@@ -30,6 +41,27 @@ export default function AdminLogin() {
           </div>
 
           <form onSubmit={handleSubmit}>
+            {/* Error Message */}
+            {error && (
+              <div
+                style={{
+                  backgroundColor: "rgba(239, 68, 68, 0.1)",
+                  border: "1px solid rgba(239, 68, 68, 0.3)",
+                  borderRadius: "6px",
+                  padding: "0.75rem 1rem",
+                  marginBottom: "1.5rem",
+                  color: "#ef4444",
+                  fontSize: "0.9rem",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                }}
+              >
+                <i className="fa-solid fa-circle-exclamation"></i>
+                <span>{error}</span>
+              </div>
+            )}
+
             <div className="form-group">
               <label>ADMIN EMAIL</label>
               <input

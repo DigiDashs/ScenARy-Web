@@ -6,6 +6,8 @@ import "../../styles/navbar.css";
 import "../../styles/hero.css";
 import "../../styles/footer.css";
 import "../../styles/auth.css";
+import "../../styles/dashboard.css";
+import "../../styles/user-details.css";
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });

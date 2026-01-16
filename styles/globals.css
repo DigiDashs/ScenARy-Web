@@ -59,3 +59,26 @@ h6 {
   font-family: var(--font-display);
   color: var(--color-accent-gold);
 }
+
+.btn-gold {
+  background: #fff;
+  border: none;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-gold:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
