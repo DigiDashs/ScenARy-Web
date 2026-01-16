@@ -1,0 +1,93 @@
+/* src/styles/auth.css */
+
+/* ===========================
+   Auth Pages
+=========================== */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg-darker);
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #292524 0%,
+    #0c0a09 100%
+  );
+}
+
+.auth-wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 1rem;
+  perspective: 1000px;
+}
+
+.glass-card {
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(10px);
+  display: none;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.glass-card.active {
+  display: block;
+}
+
+/* Auth Page Specifics */
+.logo-area {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.logo-icon {
+  font-size: 2.5rem;
+  color: var(--color-accent-gold);
+  margin-bottom: 1rem;
+}
+
+.logo-area h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo-area p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-glass-border);
+  padding-top: 1.5rem;
+}
+
+.auth-footer a {
+  color: var(--color-accent-gold);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  color: var(--color-accent-gold-hover);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
