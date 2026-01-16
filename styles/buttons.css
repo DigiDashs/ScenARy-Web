@@ -1,0 +1,64 @@
+/* src/styles/buttons.css */
+
+/* ===========================
+   Buttons
+=========================== */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  background-color: var(--color-accent-gold);
+  color: #000;
+}
+
+.btn:hover {
+  background-color: var(--color-accent-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.btn-primary {
+  background-color: var(--color-accent-gold);
+  color: #000;
+  font-weight: 700;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 0.85rem;
+  letter-spacing: 1.2px;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 1px solid var(--color-accent-gold);
+  color: var(--color-accent-gold);
+}
+
+.btn-outline:hover {
+  background: rgba(212, 175, 55, 0.1);
+  border-color: var(--color-accent-gold-hover);
+  color: var(--color-accent-gold-hover);
+}
